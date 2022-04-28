@@ -1,5 +1,3 @@
-import React from 'react';
-
 const url = 'https://covid19.mathdro.id/api';
 
 export const FetchTotalStats = async () => {
