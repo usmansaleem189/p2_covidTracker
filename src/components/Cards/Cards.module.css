@@ -1,0 +1,41 @@
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 50px 10%;
+    width: 80%;
+}
+
+.card {
+
+    margin: 0 3% !important;
+    width: 200px !important;  
+}
+
+.confirmed {
+    border-bottom: solid 8px rgb(228, 130, 130) !important;
+}
+
+.recovered {
+    border-bottom: solid 8px rgb(159, 236, 159) !important;
+}
+
+.deaths {
+    border-bottom: solid 8px rgb(53, 50, 50, 0.5) !important;
+}
+
+
+@media (max-width: 775px) {
+    .cardsContainer {
+        flex-direction: column;
+        
+    }
+    .card {
+        width: 80% !important;
+        margin: 2% 2% !important;
+        
+    }
+}

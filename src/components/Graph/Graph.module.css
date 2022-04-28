@@ -1,0 +1,36 @@
+.graphContainer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.lineChart {
+    width: 500px !important;
+    height: 370px !important;
+}
+
+.barChart {
+    width: 500px !important;
+    height: 370px !important;
+}
+
+@media (max-width: 775px) {
+    .graphContainer {
+        flex-direction: column;
+        
+    }
+    .lineChart {
+        width: 90% !important;
+        margin: 2% 2% !important;
+        
+    }
+    .barChart {
+        width: 90% !important;
+        margin: 2% 2% !important;
+        
+    }
+}
