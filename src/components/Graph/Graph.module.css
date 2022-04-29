@@ -4,7 +4,7 @@
     width: 90%;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
 }
 
@@ -26,11 +26,12 @@
     .lineChart {
         width: 90% !important;
         margin: 2% 2% !important;
+        height: 370px !important;
         
     }
     .barChart {
         width: 90% !important;
         margin: 2% 2% !important;
-        
+        height: 370px !important;
     }
 }
