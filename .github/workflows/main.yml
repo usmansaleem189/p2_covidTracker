@@ -44,6 +44,8 @@ jobs:
         with:
           # Yarn command
          cmd: build
+         env: 
+            CI: false
         
       - name: installing surge
         run: npm install -g surge
