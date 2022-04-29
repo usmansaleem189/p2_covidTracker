@@ -114,22 +114,22 @@ export default function Graph({dailyStats, continentData}) {
             responsive: true,
             maintainAspectRatio: true,
         },
-        scales: {
-          x: {
-            ticks: {
-              font: {
-                size: 18
-              }
-            }
-          },
-          y: {
-            ticks: {
-              font: {
-                size: 18
-              }
-            }
-          },
-        }
+        // scales: {
+        //   x: {
+        //     ticks: {
+        //       font: {
+        //         size: 18
+        //       }
+        //     }
+        //   },
+        //   y: {
+        //     ticks: {
+        //       font: {
+        //         size: 18
+        //       }
+        //     }
+        //   },
+        // }
     
     }}
        className={styles.lineChart}/>
