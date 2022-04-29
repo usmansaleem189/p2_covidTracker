@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Graph.module.css';
 import {Line, Bar} from 'react-chartjs-2';
 
-import {Chart as ChartJS} from 'chart.js/auto';
+import {Chart} from 'chart.js/auto';
   
-
+  
 
 
 export default function Graph({dailyStats, continentData}) {
