@@ -2,10 +2,35 @@ import React from 'react';
 import styles from './Graph.module.css';
 import {Line, Bar} from 'react-chartjs-2';
 
-import {Chart} from 'chart.js/auto';
+//import {Chart} from 'chart.js/auto';
   
   
+//import {Chart, CategoryScale, LinearScale} from 'chart.js'; 
+//Chart.register(CategoryScale,LinearScale)
 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js'
+//import { Chart } from 'react-chartjs-2'
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+)
 
 export default function Graph({dailyStats, continentData}) {
   if (!dailyStats.reportDate || !continentData.length)
