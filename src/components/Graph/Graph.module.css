@@ -1,37 +1,71 @@
 .graphContainer {
     display: flex;
-    flex-direction: row;
-    width: 90%;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
+}
+
+.chartContainer{
+    display: flex;
     justify-content: space-around;
-    margin: 0 auto;
+    margin-top: 50px;
+    width: 90%;
+    height: 400px;
+    margin-bottom: 50px;
 }
 
 .lineChart {
-    width: 500px !important;
-    height: 370px !important;
+    width: 45%;
+    height: 100% !important;
+    margin: 10px 0;
+}
+.lineTest {
+    height: 100% !important;
+    margin: auto auto;
+    font-size: 50 !important;
 }
 
 .barChart {
-    width: 500px !important;
-    height: 370px !important;
+    width: 45%;
+    height: 100% !important;
+    margin: 10px 0;
+}
+
+.barTest {
+    height: 100% !important;
+    margin: auto auto;
+    font-size: 50 !important;
 }
 
 @media (max-width: 775px) {
-    .graphContainer {
+    .chartContainer {
+        display: flex;
         flex-direction: column;
-        
+        align-items: center;
+        margin-top: 150px;
     }
     .lineChart {
-        width: 90% !important;
-        margin: 2% 2% !important;
-        height: 370px !important;
+        width: 100%;
+        min-height: 400px;
+        margin: 10px 0;    
+    }
+    .lineTest {
+        width: 100%;
+        min-height: 400px;
+        /* min-height: 600px; */
+        margin: 10px 0;
         
     }
     .barChart {
-        width: 90% !important;
-        margin: 2% 2% !important;
-        height: 370px !important;
+        width: 100%;
+        min-height: 400px;
+        margin: 10px 0;
+    }
+    .barTest {
+        width: 100%;
+        min-height: 400px;
+        /* min-height: 600px; */
+        margin: 10px 0;
+        
     }
 }

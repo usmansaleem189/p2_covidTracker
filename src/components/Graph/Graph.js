@@ -90,6 +90,8 @@ export default function Graph({dailyStats, continentData}) {
 
   return (
     <div className={styles.graphContainer}>
+      <div className={styles.chartContainer}>
+      <div className={styles.lineChart}>
       <Line 
         data = {lineData}
         options={{
@@ -97,42 +99,50 @@ export default function Graph({dailyStats, continentData}) {
             title: {
               display: true,
               text:  `${dailyStats.name}: Daily Data `,
-              font: {
-                size: 20
-              }
+               font: {
+                 size: 12
+               }
             },
             legend: {
               display: true,
-              position: 'bottom',
+              position: 'top',
               labels: {
-                font: {
-                  size: 18
-                }
+                 font: {
+                   size: 10
+                 },
+                 usePointStyle:true
               }
             },
 
             responsive: true,
-            maintainAspectRatio: true,
+            //maintainAspectRatio: true,
+            aspectRatio: 1
         },
-        // scales: {
-        //   x: {
-        //     ticks: {
-        //       font: {
-        //         size: 18
-        //       }
-        //     }
-        //   },
-        //   y: {
-        //     ticks: {
-        //       font: {
-        //         size: 18
-        //       }
-        //     }
-        //   },
-        // }
+        scales: {
+          x: {
+            ticks: {
+              font: {
+                size: 10
+              }
+            }
+          },
+          y: {
+            ticks: {
+              font: {
+                size: 10,
+                lineHeight: 1
+              }
+            },
+          
+          },
+        }
     
     }}
-       className={styles.lineChart}/>
+    className={styles.lineTest} />
+       </div>
+
+
+       <div className={styles.barChart}>
       <Bar data={barData}
           options={{
             plugins: {
@@ -140,39 +150,43 @@ export default function Graph({dailyStats, continentData}) {
                 display: true,
                 text: `Covid-19 Statistics for ${continentData[0].title}`,
                 font: {
-                  size: 20
+                  size: 12
                 }
               },
               legend: {
                 display: true,
-                position: 'bottom',
+                position: 'top',
                 labels: {
                   font: {
-                    size: 18
-                  }
+                    size: 10
+                  },
+                  usePointStyle:true
                 }
               },
               responsive: true,
-              maintainAspectRatio: true,
+              //maintainAspectRatio: true,
+              aspectRatio: 1
             },
             scales: {
               x: {
                 ticks: {
                   font: {
-                    size: 18
+                    size: 10
                   }
                 }
               },
               y: {
                 ticks: {
                   font: {
-                    size: 18
+                    size: 10
                   }
                 }
               },
             }
           }}
-            className={styles.barChart}/>
+          className={styles.barTest}/>
+            </div>
+            </div>
 
 
     </div>
